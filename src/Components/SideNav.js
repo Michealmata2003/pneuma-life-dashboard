@@ -31,7 +31,7 @@ function SideNav() {
                   {click ? <HiOutlineMenuAlt1 /> : <HiOutlineMenuAlt1 />}
                   <h5>Menu</h5>
                 </div>
-                <NavLink to="/"><img className="real-logo" src={realLogo} alt="" /></NavLink>
+                <NavLink to="/dashboard"><img className="real-logo" src={realLogo} alt="" /></NavLink>
 
               </ul>
             </div>
@@ -39,7 +39,7 @@ function SideNav() {
               <ul className={click ? "main-ul active" : "main-ul "}>
                 <li>
                   <NavLink
-                    to="/"
+                    to="/dashboard"
                     style={({ isActive }) =>
                       isActive ? activeStyle : normalStyle
                     }
@@ -135,12 +135,12 @@ function SideNav() {
         <nav>
           <li className="logo">
             <img className="real-logo" src={realLogo} alt="" />
-            <Link to="/">Pneuma Life</Link>
+            <Link to="/dashboard">Pneuma Life</Link>
           </li>
           <ul>
             <li>
               <NavLink
-                to="/"
+                to="/dashboard"
                 style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
               >
                 <FaHome />

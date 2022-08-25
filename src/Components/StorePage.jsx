@@ -106,10 +106,6 @@ function StorePage() {
                 : null
             }
 
-
-
-
-
             <div className="container">
                 <div className="full-headnav">
                     <div className="headnav">
